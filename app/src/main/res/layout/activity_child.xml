@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/activity_child"
+    tools:context=".ChildActivity">
+
+    <!-- tool bar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBackgroundtoolbar"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/childList"
+        android:layout_width="match_parent"
+        android:layout_height="509dp"
+        android:layout_below="@+id/toolbar">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--
+    <include layout="@layout/content_child" />
+    -->
+
+    <!-- fab button -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/addchild"
+        app:fabSize="normal"
+        android:backgroundTint="@color/colorFAB" />
+
+</RelativeLayout>

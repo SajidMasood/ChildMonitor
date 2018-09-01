@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    !--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_call" />
+    </LinearLayout>
+
+    <!-- Title Of Number-->
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="03001234567"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <!-- title of type of call -->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number"
+        android:textColor="#343434"
+        android:textSize="13dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="outgoing" />
+
+    <!-- title of date -->
+    <TextView
+        android:id="@+id/dur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:textColor="#343434"
+        android:textSize="14dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="date" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dur"
+        android:textColor="#343434"
+        android:textSize="14dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="date"/>
+
+
+
+</RelativeLayout>
